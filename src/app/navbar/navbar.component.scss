@@ -1,0 +1,29 @@
+.navbar {
+    background: #E3C7A6; /* caramel */
+    padding: 12px 20px;
+}
+
+.navbar-brand .LogoName {
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.navbar-brand .role {
+    color: #5A3A27;
+    font-weight: bold;
+}
+
+.nav-link {
+    // color: #3F2A1C !important;
+    color: black !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #A06D47 !important;
+}
+
+.navbar {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.09);
+}

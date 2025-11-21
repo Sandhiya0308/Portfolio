@@ -1,0 +1,35 @@
+<!-- Projects -->
+<app-navbar></app-navbar>
+<div id="projects" class="project-section py-5">
+    <div class="container"><br>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h1 class="Projects">
+                    <span><ion-icon name="caret-back-outline" class="projects-logo"></ion-icon></span>
+                    Projects
+                </h1>
+            </div>
+            <div class="col-md-4"></div>
+        </div><br>
+
+        <div class="project-item" *ngFor="let p of projects; let i = index" [class.reverse]="i % 2 !== 0">
+
+            <!-- Text Block -->
+            <div class="project-text">
+                <h3 class="project-name">{{ p.name }}</h3>
+                <p class="project-role">Technologies Used: {{ p.technologyUsed }}</p>
+
+                <ul class="project-description">
+                    <li *ngFor="let d of p.description">{{ d }}</li>
+                </ul>
+            </div>
+
+            <!-- Image Block -->
+            <div class="project-image">
+                <img [src]="p.image" [alt]="p.name">
+            </div>
+
+        </div>
+    </div>
+</div>

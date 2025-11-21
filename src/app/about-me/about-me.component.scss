@@ -1,0 +1,81 @@
+/* ====== Global ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF6F2; /* Matches project section */
+    color: #7A3218;
+}
+
+/* ====== Hero Section ====== */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(to right,  #E7C8A0 50%, #FDFBF8 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+/* ====== Card Design ====== */
+.profile-card {
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ====== Profile Image ====== */
+.profile-img img {
+    height: 150px;
+    width: 115px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 18px rgba(0,0,0,0.10);
+}
+
+/* ====== Social Icons ====== */
+.social-links a {
+    color: #7A3218;
+    font-size: 1.4rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #E88942;
+    transform: translateY(-3px);
+}
+
+/* ====== Buttons ====== */
+.btn-dark {
+    background-color: #7A3218;
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #C96A3E;
+}
+
+.btn-outline-dark {
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: 2px solid #7A3218;
+    color: #7A3218;
+}
+
+.btn-outline-dark:hover {
+    background-color: #7A3218;
+    color: white;
+}
+
+/* ====== Mobile ====== */
+@media (max-width: 768px) {
+    .hero-section {
+        background: #FFF6F2;
+        text-align: center;
+    }
+}

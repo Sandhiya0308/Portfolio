@@ -1,0 +1,92 @@
+<app-navbar></app-navbar>
+<div id="resume" class="resume-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <!-- <a href="../../styles.scss"></a> -->
+                <h1 class="resume">
+                    <Span><ion-icon name="caret-back-outline" class="resume-logo"></ion-icon></Span>
+                    Resume
+                </h1>
+            </div>
+            <div class="col-md-4"></div>
+        </div><br>
+
+        <!-- Experience -->
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h4 class="mb-3 exp">Experience</h4>
+            <a href="/assets/Sandhiya S.pdf" class="btn btn-primary rounded-pill px-4 py-2" target="_blank">
+                Download CV
+            </a>
+        </div>
+        <div class="resume-card mb-4" *ngFor="let exp of experiences">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-primary fw-bold">{{ exp.duration }}</h6>
+                    <p class="mb-1 fw-semibold">{{ exp.role }}</p>
+                    <p class="small text-muted mb-0">{{ exp.company }}</p>
+                </div>
+                <div class="col-md-8">
+                    <p class="text-secondary">{{ exp.description }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <h4 class="exp mt-5 mb-4">Education</h4>
+        <div class="resume-card mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-primary fw-bold">2020 – 2023</h6>
+                    <p class="mb-1 fw-semibold">BSC.Information Technology(IT)</p>
+                    <p class="small text-muted mb-0">Nehru Arts and Science colleage, Coimbatore</p>
+                </div>
+                <div class="col-md-8">
+                    <p class="text-secondary">
+                        Graduated with distinction, focusing on web software development.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <h4 class="exp mt-5 mb-4">Professional Skillset</h4>
+        <div class="resume-card mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><span class="dot-blue"></span> JavaScript</li>
+                        <li><span class="dot-blue"></span> Angular</li>
+                        <li><span class="dot-blue"></span> ReactJS</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><span class="dot-blue"></span> Node.js</li>
+                        <li><span class="dot-blue"></span> Bootstrap</li>
+                        <li><span class="dot-blue"></span> MySQL / MSSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages -->
+        <h4 class="exp mb-4">Languages</h4>
+        <div class="resume-card mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><span class="dot-blue"></span> English (Proficient)</li>
+                        <li><span class="dot-blue"></span> Tamil (Native)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><span class="dot-blue"></span> Kannada (Speak)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

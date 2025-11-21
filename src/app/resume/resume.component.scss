@@ -1,0 +1,113 @@
+/* ============================
+   Global
+============================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF6F2;
+    color: #6B3E2E;
+}
+
+/* ============================
+   Resume Title
+============================= */
+.resume {
+    text-align: center !important;
+    text-shadow: 3px 3px 6px #ac2e0054;
+    font-weight: bold;
+    color: #7a3218;
+}
+
+.resume-logo {
+    font-size: larger;
+    color: #C96A3E;
+    /* Caramel highlight */
+    margin: -10px;
+}
+
+.exp {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* ============================
+   Buttons
+============================= */
+.btn-dark {
+    background-color: #7A3218;
+    /* Espresso */
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #C96A3E;
+    /* Caramel hover */
+}
+
+.btn-outline-dark {
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: 2px solid #7A3218;
+    color: #7A3218;
+}
+
+.btn-outline-dark:hover {
+    background-color: #7A3218;
+    color: #FFFFFF;
+}
+
+/* ============================
+   Resume Section Wrapper
+============================= */
+.resume-section {
+    background-color: #F3E5D8;
+    /* Cappuccino beige */
+    padding: 80px 0;
+}
+
+/* ============================
+   Resume Cards
+============================= */
+.resume-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.12);
+}
+
+/* ============================
+   Text Primary
+============================= */
+.text-primary {
+    color: #7A3218 !important;
+    /* Espresso */
+}
+
+/* Dot Indicator */
+.dot-blue {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #C96A3E;
+    /* Caramel dot */
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* ============================
+   Mobile Responsive
+============================= */
+@media (max-width: 768px) {
+    .resume-section {
+        text-align: center;
+        background-color: #FFF6F2;
+        /* Match mobile hero */
+    }
+}
