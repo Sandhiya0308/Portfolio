@@ -33,3 +33,22 @@
 .navbar {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar-brand {
+        flex-direction: column;
+        /* Stack vertically */
+        align-items: flex-start;
+        /* Align left */
+    }
+
+    .navbar-brand span {
+        display: block;
+    }
+
+    .navbar-brand>span:nth-child(2) {
+        display: none;
+        /* Hide the "|" separator on mobile */
+    }
+}
