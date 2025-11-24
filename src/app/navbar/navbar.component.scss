@@ -1,5 +1,11 @@
+.nav-container {
+    background-color: #E3C7A6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+}
+
 .navbar {
-    background: #E3C7A6; /* caramel */
+    background: #E3C7A6;
+    /* caramel */
     padding: 12px 20px;
 }
 
@@ -25,5 +31,5 @@
 }
 
 .navbar {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.09);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
 }
