@@ -27,5 +27,10 @@ export const routes: Routes = [
         path: 'navbar',
         loadComponent: () =>
             import('./navbar/navbar.component').then(m => m.NavbarComponent)
+    },
+    {
+        path: 'footer',
+        loadComponent: () =>
+            import('./footer/footer.component').then(m => m.FooterComponent)
     }
 ];
